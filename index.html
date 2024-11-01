@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino-Run</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .heading{
+        position: absolute;
+        top : 5%;
+        right: 10%;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: grey;
+      }
+      .text{
+        position: absolute;
+        top : 9%;
+        left: 40%;
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: grey;
+        box-sizing: content-box;
+      }
+      .restart
+      {
+        position: absolute;
+        top : 18%;
+        left: 45%;
+        background-color: rgba(0,0,0,0);
+        border: 2px solid grey;
+        border-radius: 10%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: grey;
+        padding: 7px;
+        font-size: 30px;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        /* background-color: black; */
+        /* The css below for body is unknown to me used for secure touch*/
+        user-select: none;
+        touch-action: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      }
+      canvas {
+        width : 100%;
+        height : 40%;
+        border: 2px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Score :
+      <span class="Score">0</span>
+    </h1>
+    <canvas id="game"> </canvas>
+    <script type="module" defer src="index.js"></script>
+  </body>
+</html>
